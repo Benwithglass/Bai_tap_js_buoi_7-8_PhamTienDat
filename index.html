@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  
+    <div class="container">
+        <div class="mb-3">
+          <label for="" class="form-label mt-3">Hãy nhập số nguyên mong muốn: </label>
+          <input type="text"
+            class="form-control" name="" id="soNguyen" aria-describedby="helpId" placeholder="">
+          <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        <!-- thêm số -->
+        <button class="btn btn-success mt-2" onclick="addNum ()">Bấm vào đây để thêm số</button>
+        <div class="bg-success bg-opacity-75 p-2 text-white mt-2"></div>
+        <!-- tính tổng -->
+        <button class="btn btn-warning mt-2" onclick="sumSo ()">tính tổng của các phần tử</button>
+        <div class="bg-warning bg-opacity-75 p-2 text-dark mt-2"></div>
+        <!-- đếm số -->
+        <button class="btn btn-info mt-2" onclick="demSo ()">đếm số dương</button>
+        <div class="bg-info bg-opacity-75 p-2 text-dark mt-2"></div>
+        <!-- tìm số nhỏ nhất -->
+        <button class="btn btn-danger mt-2" onclick="minSo ()">Số nhỏ nhất</button>
+        <div class="bg-danger bg-opacity-75 p-2 text-dark mt-2"></div>
+        <!-- tìm số dương nhỏ nhất -->
+        <button class="btn btn-primary mt-2" onclick="minSoDuong ()">Số dương nhỏ nhất</button>
+        <div class="bg-primary bg-opacity-75 p-2 text-white mt-2"></div>
+        <!-- tìm số chẵn cuối cùng -->
+        <button class="btn btn-secondary mt-2" onclick="soChanCuoi ()">Số chẵn cuối cùng</button>
+        <div class="bg-secondary bg-opacity-75 p-2 text-white mt-2"></div>
+        <!-- đổi chỗ -->
+        <input type="text"
+        class="form-control mt-2" name="" id="soThu1" aria-describedby="helpId" placeholder="Số vị trí 1">
+        <input type="text"
+        class="form-control mt-2" name="" id="soThu2" aria-describedby="helpId" placeholder="Số vị trí 2">
+        <button class="btn btn-light mt-2" onclick="hoanDoi ()">Đổi chỗ phần tử</button>
+        <div class="bg-light bg-opacity-75 p-2 text-dark mt-2"></div>
+        <!-- sắp xếp tăng dần -->
+        <button class="btn btn-info mt-2" onclick="xepTang ()">Sắp xếp tăng dần</button>
+        <div class="bg-info bg-opacity-75 p-2 text-dark mt-2" id="tangDan"></div>
+        <!-- số nguyên tố đầu tiên -->
+        <button class="btn btn-warning mt-2" onclick="soNgToDauTien ()">Số nguyên tố đầu tiên</button>
+        <div class="bg-warning bg-opacity-75 p-2 text-dark mt-2" id="dauTien"></div>
+    </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <!-- file js main -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
