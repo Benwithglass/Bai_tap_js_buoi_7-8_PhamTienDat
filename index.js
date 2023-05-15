@@ -66,6 +66,7 @@ function minSoDuong () {
 function soChanCuoi () {
     var arrChan = [];
 
+
     for (i = 0; i < arr.length; i++) {
         if (arr[i] % 2 == 0) {
             arrChan.push(arr[i]);
@@ -97,20 +98,41 @@ function hoanDoi () {
 }
 
 // Sắp xếp tăng dần
+function compareNumbers(a,b) {
+    return a - b;
+}
+
 function xepTang () {
-    document.getElementById("tangDan").innerHTML = "mảng sau khi được sắp xếp theo thứ tự tăng dần sẽ là: " + arr.sort();
+
+    console.log(arr.sort());
+    console.log(arr.sort(compareNumbers));
+
+    document.getElementById("tangDan").innerHTML = "mảng sau khi được sắp xếp theo thứ tự tăng dần sẽ là: " + arr.sort(compareNumbers);
 }
 
 // Tìm số nguyên tố đầu tiên
-function soNgToDauTien () {
-    var soDauTien = 0;
-
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] > 1 && arr[i] % i == 0) {
-            soDauTien = arr[i];
-        }break;
-        
+function ktraSoNgTo () {
+    let n;
+    if (n <= 1){
+        return false;
     }
 
-    console.log(arr[i]);
+    else {
+        for(i=2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
+
+arr.forEach(function(element) {
+    const soNgto = ktraSoNgTo(element);
+
+    if (soNgto) {
+        console.log(`${element} là số nguyên tố`);
+    } else {
+        console.log(`${element} không phải là số nguyên tố`);
+    }
+})
